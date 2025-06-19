@@ -1,0 +1,8 @@
+pipelines:
+  branches: 
+   nextjs-15-job-tracker: 
+    - step:
+        name: Just a simple echo
+        script: 
+          - echo "Hello World"
+          -  
