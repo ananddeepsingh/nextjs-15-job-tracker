@@ -1,9 +1,9 @@
 import { Job } from "@/types/job";
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
 export const JOBS: Job[] = [];
 
-export function GET(request: NextRequest) {
+export function GET() {
   console.log(JOBS, "JOBS");
   return NextResponse.json(JOBS);
 }
